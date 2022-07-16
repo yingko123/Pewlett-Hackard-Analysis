@@ -1,7 +1,7 @@
 -- 1. The Number of Retiring Employees by Title 
-
 -- 1a. Set up retirement_titles table with employees with retirement birthday
 DROP TABLE retirement_titles
+
 SELECT e.emp_no,
 	e.first_name,
 	e.last_name,
@@ -42,7 +42,6 @@ ORDER BY COUNT(title) DESC
 SELECT * FROM retiring_titles
 
 -- 2. The Employees Eligible for the Mentorship Program
-
 SELECT DISTINCT ON (e.emp_no)
 	e.emp_no,
 	e.first_name,
@@ -51,6 +50,7 @@ SELECT DISTINCT ON (e.emp_no)
 	de.from_date,
 	de.to_date,
 	ti.title
+INTO mentorship_eligibility
 FROM employees as e
 	INNER JOIN dept_employees as de
 		ON(e.emp_no = de.emp_no)
@@ -59,13 +59,4 @@ FROM employees as e
 WHERE de.to_date = ('9999-01-01') 
 AND(e.birth_date BETWEEN '1965-01-01'AND '1965-12-31')
 
--- Use Dictinct with Orderby to remove duplicate rows
-SELECT DISTINCT ON (______) _____,
-______,
-______,
-______
-
-INTO nameyourtable
-FROM _______
-WHERE _______
-ORDER BY _____, _____ DESC;
+SELECT * FROM mentorship_eligibility
