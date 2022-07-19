@@ -1,3 +1,14 @@
+-- Total count of current employees (240,124)
+SELECT COUNT(emp_no)
+FROM dept_employees
+WHERE to_date = '9999-01-01'
+
+-- List current employees
+SELECT emp_no
+FROM dept_employees
+WHERE to_date = '9999-01-01'
+ORDER BY emp_no
+
 SELECT first_name, last_name, birth_date
 FROM employees
 WHERE birth_date BETWEEN '1952-01-01' AND '1955-12-31';
