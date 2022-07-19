@@ -17,9 +17,9 @@ We will help Pewlett Hackard evaluate their current employee population to prepa
 
 
 ## Summary:
-To better manage the 70,000 possible vacancies of positions from the upcoming "Silver Tsuami", we recommend Pewleet Hackard expand their mentorship program to include employees with birthdates between 1962 to 1967. We identified these employees with their information in the [expand_mentorship.csv](Data/expand_mentorship.csv) file.  In this expanded program, we will have about 57,000 possible mentors. We believe this mentorship program should be able to promote talents within to fill these upcoming vacancies.  Below table show the distribution of title for these mentors.
+To better manage the 70,000 possible vacancies of positions from the upcoming "Silver Tsuami", we recommend Pewleet Hackard expand their mentorship program to include employees with birthdates between 1962 to 1967. We identified these employees with their information in the [expanded_mentorship.csv](Data/expand_mentorship.csv) file.  In this expanded program, we will have about 57,000 possible mentors. We believe this mentorship program should be able to promote talents within to fill these upcoming vacancies.  Below table show the distribution of title for these mentors.
 
-<img src = "expand_mentorship.PNG" width="250px">
+<img src = "expanded_mentorship.PNG" width="250px">
 <br>
 
 
