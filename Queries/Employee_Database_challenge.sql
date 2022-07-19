@@ -72,7 +72,7 @@ SELECT DISTINCT ON (e.emp_no)
 	de.from_date,
 	de.to_date,
 	ti.title
-INTO expand_mentorship
+INTO expanded_mentorship
 FROM employees as e
 	INNER JOIN dept_employees as de
 		ON(e.emp_no = de.emp_no)
@@ -81,12 +81,13 @@ FROM employees as e
 WHERE de.to_date = ('9999-01-01') 
 AND(e.birth_date BETWEEN '1962-01-01'AND '1967-12-31')
 
-SELECT * FROM expand_mentorship
+SELECT * FROM expanded_mentorship
 
-SELECT COUNT(emp_no) FROM expand_mentorship
+SELECT COUNT(emp_no) FROM expanded_mentorship
+
 -- 3b. Expanded mentorship program by title cound
 SELECT count(title), title
-FROM expand_mentorship
+FROM expanded_mentorship
 GROUP BY title
 ORDER BY COUNT(title) DESC
 
